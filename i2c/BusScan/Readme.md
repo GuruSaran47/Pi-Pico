@@ -9,3 +9,5 @@
    3. According to the protocol, there are normal addresses and reserved addresses. So accordingly the device you'd have connected to the bus would have the register between 0x08 to 0x77 where 0x00 to 0x07 and 0x77 to 0x7F are reserved
    4. Now using a method within the i2c_read_blocking() or even writing like i2c_write_blocking(): According to the Pico SDK these functions are designed to return the result based on weather the function has successfully returned or not.
    5. If we have any neagative response means that the device address we are looking for doesn't exist.
+ - ### Important thing, Do not forget to add the .c file sin your makefile to get it compiled.
+-   #### I have added the make file for sample/reference. look at the "add_executables()" for refering that.
